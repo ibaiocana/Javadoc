@@ -14,7 +14,10 @@ public class Almacen {
     private int nProductos;
     private Producto[] lista;
      
-    
+    /**
+     * Constructor de la clase Almacen.
+     * @param nMax numero maximo de los objetos que contendrá el array.
+     */
     
     public Almacen(int nMax){
         this.nMax = nMax;
@@ -31,6 +34,12 @@ public class Almacen {
         return nProductos;
     }
     
+    /**
+     * Inserta los productos en el array.
+     * @param p Objeto producto que se insertara.
+     * @return Devuelve true o false, si el objeto se ha podido insertar
+     */
+    
     public boolean insertaProducto(Producto p){
         if (nProductos < nMax) {
             lista[nProductos] = p;
@@ -43,6 +52,12 @@ public class Almacen {
       
     }
     
+    /**
+     * Insertar productos en el array ordenados.
+     * @param p Objeto producto
+     * @return Devuelve true o false, si el objeto se ha introducido correctamente.
+     */
+    
     public boolean insertaProductoOrdenado(Producto p){
         if (nProductos < nMax && !contieneProducto(p)) {
             lista[nProductos] = p;
@@ -54,6 +69,10 @@ public class Almacen {
         }
       
     }
+    
+    /**
+     * Ordena el Array de los objetos producto
+     */
     
     public void ordena(){
         Producto aux;
@@ -69,6 +88,12 @@ public class Almacen {
             }
         System.out.println(Arrays.toString(lista));
 }
+    
+    /**
+     * Busca si el objeto producto esta dentro del array.
+     * @param p Objeto producto.
+     * @return Devuelve true o false, si el array contiene el objeto producto.
+     */
     
     public boolean contieneProducto(Producto p){
 //        for (int i = 0; i < nProductos; i++) {
@@ -87,6 +112,11 @@ public class Almacen {
     }
     
     //devuelve la suma de todos los precios base
+    
+    /**
+     * Suma todos los precios de los objetos.
+     * @return Devuelve un double con el precio final de todos los objetos del array.
+     */
     public double sumaBases() {
         double suma = 0;
         for (int i = 0; i < nProductos; i++) {
@@ -97,6 +127,11 @@ public class Almacen {
     
     
     //devuelve una cadena con los productos que están en la lista (cada uno en una linea), sin nulos 
+    
+    /**
+     * Consigue los elementos del array.
+     * @return Devuelve un String con todos los elementos del array.
+     */
     public String dameElementos(){
     String salida = "";
         for (int i = 0; i < nProductos; i++) {
