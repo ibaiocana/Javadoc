@@ -63,6 +63,10 @@ public class Producto {
         return true;
     }
      
+    /**
+     * Calculo de precio de venta al publico.
+     * @return Devuelve el precio final de venta al publico.
+     */
     public double precioVentaPublico(){
         return precioBase + precioBase*tipoIva/100;
         
