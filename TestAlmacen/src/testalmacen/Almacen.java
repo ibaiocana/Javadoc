@@ -1,15 +1,12 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package testalmacen;
 
 import java.util.Arrays;
 
 /**
  *
- * @author Juan Carlos
+ * @author Ibai Ocaña
+ * @version 1.0
+ * @since 03-03-2022
  */
 public class Almacen {
     
