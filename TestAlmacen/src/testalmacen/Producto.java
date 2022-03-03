@@ -1,15 +1,12 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package testalmacen;
 
 import java.util.Objects;
 
 /**
  *
- * @author Juan Carlos
+ * @author Ibai Ocaña
+ * @version 1.0
+ * @since 03-03-2022
  */
 public class Producto {
      private static double precioMinimo = 5; //especifico de la clase
@@ -21,6 +18,14 @@ public class Producto {
      public Producto(){//constructor por defecto
          
      }
+     
+     /**
+      * Constuctor principal del objeto producto.
+      * @param nombre El nombre del producto.
+      * @param precioBase El precio del producto.
+      * @param tipoIva El tipo de iva del producto.
+      */
+     
     public Producto(String nombre, double precioBase, double tipoIva){ // no devuelve nada y no es void
         this.nombre = nombre;
        // this.precioBase = precioBase;
