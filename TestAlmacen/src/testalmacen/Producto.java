@@ -15,7 +15,10 @@ public class Producto {
      private double precioBase;// valen cero por defecto
      private double tipoIva;//valen cero por defecto
     
-     public Producto(){//constructor por defecto
+    /**
+     *
+     */
+    public Producto(){//constructor por defecto
          
      }
      
@@ -72,6 +75,10 @@ public class Producto {
         
     }
     
+    /**
+     *
+     * @param precio
+     */
     public void setPrecioBase(double precio){//parámetro del mismo tipo que el atributo
         if (precio < precioMinimo){
             precio = precioMinimo;
@@ -79,10 +86,18 @@ public class Producto {
         this.precioBase = precio;
     }
 
+    /**
+     *
+     * @param nombre
+     */
     public void setNombre(String nombre) {
         this.nombre = nombre;
     }
 
+    /**
+     *
+     * @param tipoIva
+     */
     public void setTipoIva(double tipoIva) {
         if(tipoIva < 3.3 ){
             tipoIva = 3.3;
@@ -90,22 +105,42 @@ public class Producto {
         this.tipoIva = tipoIva;
     }
 
+    /**
+     *
+     * @return
+     */
     public String getNombre() {
         return nombre;
     }
 
+    /**
+     *
+     * @return
+     */
     public double getPrecioBase() {
         return precioBase;
     }
 
+    /**
+     *
+     * @return
+     */
     public double getTipoIva() {
         return tipoIva;
     }
 
+    /**
+     *
+     * @param precioMinimo
+     */
     public static void setPrecioMinimo(double precioMinimo) {
         Producto.precioMinimo = precioMinimo;
     }
 
+    /**
+     *
+     * @return
+     */
     public static double getPrecioMinimo() {
         return precioMinimo;
     }
