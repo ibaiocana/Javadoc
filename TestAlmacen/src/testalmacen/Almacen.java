@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 /**
  *
- * @author Ibai Ocaña
+ * @author Ibai Ocaña Lorente
  * @version 1.0
  * @since 03-03-2022
  */
